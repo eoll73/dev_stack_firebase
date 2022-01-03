@@ -8,11 +8,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(MediaQuery.of(context).size.width);
-    print(MediaQuery.of(context).size.height);
-    //final TextEditingController emailController = TextEditingController();
-    //final TextEditingController passwordController = TextEditingController();
-
 
     final authService = Provider.of<AuthService>(context);
     return Scaffold(
