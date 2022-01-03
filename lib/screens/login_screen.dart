@@ -37,6 +37,7 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 30),
           ElevatedButton(
             onPressed: () {
               authService.signInWithEmailAndPassword(
@@ -46,6 +47,7 @@ class LoginScreen extends StatelessWidget {
             },
             child: const Text ('Login'),
           ),
+          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, '/register');

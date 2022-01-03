@@ -1,10 +1,10 @@
-import 'package:dev_stack_firebase/screens/home_screen.dart';
 import 'package:dev_stack_firebase/screens/login_screen.dart';
 import 'package:dev_stack_firebase/services/auth_service.dart';
 import 'package:dev_stack_firebase/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'screens/register_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => Wrapper(),
           '/login': (context) => LoginScreen(),
-          //'/register': (context) => RegisterScreen(),
+          '/register': (context) => RegisterScreen(),
         },
       ),
     );
